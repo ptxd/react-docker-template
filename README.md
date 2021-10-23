@@ -100,14 +100,14 @@ The build is minified and the filenames include the hashes.<br>
 
 Your app is ready to be deployed.
 
-## Deployment to Local Docker
+## Deployment to Local Docker Application
 
-### Build the docker image
+### Build the docker container
 ```sh
 docker build -t react-docker-template .
 ```
 
-### Run the docker app
+### Run the docker container app
 ```sh
 docker run -p 3000:80 react-docker-template
 ```
