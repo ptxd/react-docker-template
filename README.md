@@ -3,29 +3,13 @@
 ## Quickstart
 
 ```sh
-git clone 
+Navigate to local director using CLI(e.g BASH)
+git clone https://github.com/ptxd/react-docker-template.git
 npm start
 ```
 
-If you've previously installed `create-react-app` globally via `npm install -g create-react-app`, we recommend you uninstall the package using `npm uninstall -g create-react-app` or `yarn global remove create-react-app` to ensure that npx always uses the latest version.
 
-_([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
-
-Then open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>
-When you’re ready to deploy to production, create a minified bundle with `npm run build`.
-
-<p align='center'>
-<img src='https://cdn.jsdelivr.net/gh/facebook/create-react-app@27b42ac7efa018f2541153ab30d63180f5fa39e0/screencast.svg' width='600' alt='npm start'>
-</p>
-
-### Get Started Immediately
-
-You **don’t** need to install or configure tools like webpack or Babel.<br>
-They are preconfigured and hidden so that you can focus on the code.
-
-Create a project, and you’re good to go.
-
-## Creating an App
+## Starting the App
 
 **You’ll need to have Node 14.0.0 or later version on your local development machine** (but it’s not required on the server). We recommend using the latest LTS version. You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to switch Node versions between different projects.
 
@@ -116,46 +100,18 @@ The build is minified and the filenames include the hashes.<br>
 
 Your app is ready to be deployed.
 
-## User Guide
+## Deployment to Local Docker
 
-You can find detailed instructions on using Create React App and many tips in [its documentation](https://facebook.github.io/create-react-app/).
+### Build the docker image
+```sh
+docker build -t react-docker-template .
+```
 
-## How to Update to New Versions?
+### Run the docker app
+```sh
+docker run -p 3000:80 react-docker-template
+```
 
-Please refer to the [User Guide](https://facebook.github.io/create-react-app/docs/updating-to-new-releases) for this and other information.
-
-## Philosophy
-
-- **One Dependency:** There is only one build dependency. It uses webpack, Babel, ESLint, and other amazing projects, but provides a cohesive curated experience on top of them.
-
-- **No Configuration Required:** You don't need to configure anything. A reasonably good configuration of both development and production builds is handled for you so you can focus on writing code.
-
-- **No Lock-In:** You can “eject” to a custom setup at any time. Run a single command, and all the configuration and build dependencies will be moved directly into your project, so you can pick up right where you left off.
-
-## What’s Included?
-
-Your environment will have everything you need to build a modern single-page React app:
-
-- React, JSX, ES6, TypeScript and Flow syntax support.
-- Language extras beyond ES6 like the object spread operator.
-- Autoprefixed CSS, so you don’t need `-webkit-` or other prefixes.
-- A fast interactive unit test runner with built-in support for coverage reporting.
-- A live development server that warns about common mistakes.
-- A build script to bundle JS, CSS, and images for production, with hashes and sourcemaps.
-- An offline-first [service worker](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers) and a [web app manifest](https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/), meeting all the [Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app) criteria. (_Note: Using the service worker is opt-in as of `react-scripts@2.0.0` and higher_)
-- Hassle-free updates for the above tools with a single dependency.
-
-Check out [this guide](https://github.com/nitishdayal/cra_closer_look) for an overview of how these tools fit together.
-
-The tradeoff is that **these tools are preconfigured to work in a specific way**. If your project needs more customization, you can ["eject"](https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-eject) and customize it, but then you will need to maintain this configuration.
-
-## Popular Alternatives
-
-Create React App is a great fit for:
-
-- **Learning React** in a comfortable and feature-rich development environment.
-- **Starting new single-page React applications.**
-- **Creating examples** with React for your libraries and components.
 
 Here are a few common cases where you might want to try something else:
 
@@ -169,13 +125,9 @@ Here are a few common cases where you might want to try something else:
 
 - If your website is **mostly static** (for example, a portfolio or a blog), consider using [Gatsby](https://www.gatsbyjs.org/) or [Next.js](https://nextjs.org/). Unlike Create React App, Gatsby pre-renders the website into HTML at build time. Next.js supports both server rendering and pre-rendering.
 
-- Finally, if you need **more customization**, check out [Neutrino](https://neutrino.js.org/) and its [React preset](https://neutrino.js.org/packages/react/).
-
 All of the above tools can work with little to no configuration.
-
-If you prefer configuring the build yourself, [follow this guide](https://reactjs.org/docs/add-react-to-an-existing-app.html).
 
 
 ## License
 
-Create React App is open source software [licensed as MIT](https://github.com/facebook/create-react-app/blob/main/LICENSE). The Create React App logo is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
+This template is open source software [licensed as MIT](https://github.com/ptxd/react-docker-template.git/license). The Create React App and its logo are licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
