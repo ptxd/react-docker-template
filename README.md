@@ -1,10 +1,9 @@
 # Create React App + Docker 
 
-## Quick Overview
+## Quickstart
 
 ```sh
-npx create-react-app my-app
-cd my-app
+git clone 
 npm start
 ```
 
