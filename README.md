@@ -4,9 +4,9 @@
 
 ```sh
 Navigate to local directory using CLI(e.g BASH)
-git clone https://github.com/ptxd/react-docker-template.git
-npm install
-npm start
+> git clone https://github.com/ptxd/react-docker-template.git
+> npm install
+> npm start
 ```
 
 
