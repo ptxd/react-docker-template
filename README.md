@@ -114,4 +114,4 @@ docker run -p 3000:80 react-docker-template
 
 ## License
 
-This template is open source software [licensed as MIT](https://github.com/ptxd/react-docker-template.git/license). The Create React App and its logo are licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
+This template is open source software [licensed as MIT](https://github.com/ptxd/react-docker-template/blob/master/license). The Create React App and its logo are licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
